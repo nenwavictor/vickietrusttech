@@ -9,6 +9,7 @@ import "swiper/css";
 import ecommerce from "../assets/e-commerce.PNG";
 import portfolio from "../assets/port.PNG";
 import school from "../assets/school.png";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -173,11 +174,11 @@ function FeaturedProjects() {
 
         {/* View All Projects */}
         <div className="mt-10 text-center">
-          <button
+          <Link to="/projects"
             className="rounded-lg border border-[#0770FA] px-6 py-3 font-semibold text-[#0770FA] transition hover:bg-[#0770FA] hover:text-white"
           >
             View All Projects
-          </button>
+          </Link>
         </div>
 
       </div>

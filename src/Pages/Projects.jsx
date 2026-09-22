@@ -1,12 +1,11 @@
+// import { Link } from "react-router-dom";
 import {
   FaGithub,
   FaExternalLinkAlt,
   FaArrowLeft,
 } from "react-icons/fa";
 
-
-// import { Link, useParams } from "react-router-dom";
-
+// import { useNavigate } from "react-router-dom";
 const projects = [
   {
     id: "hi-tech-ecommerce",

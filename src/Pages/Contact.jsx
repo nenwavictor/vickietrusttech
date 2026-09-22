@@ -1,6 +1,5 @@
-// import { MdPermContactCalendar } from "react-icons/md";
 import EmailForm from "../Component/EmailForm";
-// import {Link} from "react-router-dom";
+
 function Contact() {
   return (
     <section className="min-h-screen bg-[#020817] px-6 py-20 text-white">
@@ -36,7 +35,7 @@ function Contact() {
           </div>
 
           {/* Email Form */}
-          <EmailForm />
+          <EmailForm/>
 
         </div>
       </div>
