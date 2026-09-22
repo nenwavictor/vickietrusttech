@@ -1,9 +1,9 @@
+
 import EmailForm from "../Component/EmailForm";
 
 function Contact() {
   return (
     <section className="min-h-screen bg-[#020817] px-6 py-20 text-white">
-            {/* <MdPermContactCalendar /> */}
       <div className="mx-auto max-w-5xl">
 
         <div className="mb-12 text-center">
@@ -22,7 +22,6 @@ function Contact() {
 
         <div className="grid gap-10 md:grid-cols-2">
 
-          {/* Contact information */}
           <div>
             <h2 className="text-2xl font-bold">
               Contact Me
@@ -34,8 +33,7 @@ function Contact() {
             </p>
           </div>
 
-          {/* Email Form */}
-          <EmailForm/>
+          <EmailForm />
 
         </div>
       </div>
@@ -44,3 +42,4 @@ function Contact() {
 }
 
 export default Contact;
+
