@@ -10,7 +10,7 @@ import profile from "../assets/VICK.png";
 import lapto from "../assets/lapto.png";
 
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Hero() {
 
@@ -211,7 +211,8 @@ useEffect(() => {
               md:justify-start
             "
           >
-            <button
+            <Link to="details"
+
               className="
                 w-full
                 rounded-lg
@@ -229,7 +230,7 @@ useEffect(() => {
               "
             >
               View My Work
-            </button>
+            </Link>
 
             <button
             onClick={() => scrollToSection("contact")}

@@ -4,7 +4,10 @@ import {
   FaExternalLinkAlt,
   FaArrowLeft,
 } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
+import ecom from "../assets/e-commerce.PNG"
+import port from "../assets/port.PNG"
+import school from "../assets/school.png"
 // import { useNavigate } from "react-router-dom";
 const projects = [
   {
@@ -12,7 +15,7 @@ const projects = [
 
     title: "Hi-Tech E-Commerce",
 
-    image: "/assets/e-commerce.PNG",
+    image: ecom,
 
     overview:
       "Hi-Tech E-Commerce is a modern Amazon-style shopping application built to provide users with a smooth online shopping experience. Users can browse products, search for products, add items to their cart, checkout, and view their orders.",
@@ -52,7 +55,7 @@ const projects = [
 
     title: "VickieTrust Tech Portfolio",
 
-    image: "/assets/port.PNG",
+    image: port,
 
     overview:
       "VickieTrust Tech is a personal portfolio website created to showcase my skills, projects, services, and experience as a software engineer.",
@@ -90,7 +93,7 @@ const projects = [
 
     title: "School Management System",
 
-    image: "/assets/school.png",
+    image: school,
 
     overview:
       "A modern school management system designed to help administrators manage students, academic information, attendance, and other school operations.",
@@ -123,20 +126,20 @@ const projects = [
   },
 ];
 
-function Projects() {
+function Details() {
   return (
     <section className="min-h-screen bg-[#020817] px-6 py-20 text-white">
 
       <div className="mx-auto max-w-6xl">
 
         {/* Back */}
-        <button
+        <Link to="/"
           
           className="mb-10 inline-flex items-center gap-2 text-gray-400 transition hover:text-[#0770FA]"
         >
           <FaArrowLeft />
           Back Home
-        </button>
+        </Link>
 
         {/* Heading */}
         <div className="mb-16 text-center">
@@ -310,4 +313,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Details;

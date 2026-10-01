@@ -174,7 +174,7 @@ function FeaturedProjects() {
 
         {/* View All Projects */}
         <div className="mt-10 text-center">
-          <Link to="/projects"
+          <Link to="/Details"
             className="rounded-lg border border-[#0770FA] px-6 py-3 font-semibold text-[#0770FA] transition hover:bg-[#0770FA] hover:text-white"
           >
             View All Projects
