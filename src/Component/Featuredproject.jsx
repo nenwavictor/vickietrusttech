@@ -19,7 +19,7 @@ const projects = [
       "A modern Amazon-style e-commerce application where users can browse products, search, add items to cart, checkout, and view their orders.",
     image: ecommerce,
     technologies: ["React", "Tailwind CSS", "JavaScript", "REST API"],
-    live: "#",
+    live: "https://amazon-project-opal.vercel.app/",
     github: "#",
   },
   {
@@ -29,8 +29,8 @@ const projects = [
       "A responsive personal portfolio website designed to showcase my skills, projects, services, and experience as a software engineer.",
     image: portfolio,
     technologies: ["React", "Tailwind CSS", "JavaScript", "EmailJS"],
-    live: "#",
-    github: "#",
+    live: "  https://vickietrusttech.vercel.app",
+    github: "https://github.com/nenwavictor",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const projects = [
     image: school,
     technologies: ["React", "Tailwind CSS", "JavaScript", "React Router"],
     live: "#",
-    github: "#",
+    github: "https://github.com/nenwavictor",
   },
 ];
 

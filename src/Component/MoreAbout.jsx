@@ -57,8 +57,8 @@ const scrollToSection = (sectionId) => {
 
                 {/* HOME ICON */}
                 <div className="flex gap-2 items-center mb-4 text-white">
-                    <IoMdHome />
-                    <div>About Me</div>
+                    {/* <IoMdHome /> */}
+                    {/* <div>About Me</div> */}
                 </div>
 
 
@@ -79,32 +79,30 @@ const scrollToSection = (sectionId) => {
                         ABOUT ME
                     </h1>
 
-                    <p className="text-white text-4xl">
+                   <p className="text-3xl font-medium leading-tight text-gray-300 sm:text-4xl md:text-5xl lg:text-6xl">
                         Hi, I'm{" "}
-                        <span className="text-blue-300">
+                        <span className="font-extrabold text-[#0770FA]">
                             Vickietrust Tech
                         </span>
                     </p>
 
-                    <h6 className="text-blue-400">
-                        Software Engineer | Web Developer
-                    </h6>
+                    <h6 className="text-blue-400 text-sm sm:text-base font-semibold tracking-wide uppercase">
+    Software Engineer <span className="text-gray-500">|</span> Web Developer
+</h6>
 
-                    <p className="text-gray-300 mt-4">
-                        I'm a passionate software engineer with a strong
-                        focus on building modern, responsive, and
-                        user-friendly web applications. I enjoy turning
-                        ideas into real digital products using clean code,
-                        modern technologies, and a problem-solving mindset.
+<p className="text-gray-300 mt-5 max-w-2xl text-sm sm:text-base md:text-[15px] lg:text-base leading-7 tracking-wide">
+    I'm a passionate software engineer focused on building modern,
+    responsive, and user-friendly web applications. I transform ideas
+    into meaningful digital products through clean code, modern
+    technologies, and a strong problem-solving mindset.
 
-                        <br />
-                        <br />
+    <br />
+    <br />
 
-                        I love learning new technologies and continuously
-                        improving my skills to build solutions that make
-                        an impact.
-                    </p>
-
+    I continuously learn and explore new technologies, improving my
+    skills to create scalable solutions that deliver real value and
+    lasting impact.
+</p>
 
                     {/* BUTTONS */}
                     <nav className="flex gap-2 mt-4">
@@ -136,6 +134,7 @@ const scrollToSection = (sectionId) => {
                         <button
                             onClick={() => scrollToSection("contact")}
                             className="
+                                rounded-sm
                                 border
                                 border-blue-500
                                 w-34

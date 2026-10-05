@@ -7,6 +7,7 @@ import {
     FaXTwitter
 } from "react-icons/fa6";
 import log from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -37,7 +38,10 @@ function Footer() {
                         
                         
                             {/* Brand Name */}
-                            <div className="flex gap-2 align-baseline items-center justify-center md:justify-start group">
+                            <Link
+                                to="/"
+                                className="flex gap-2 align-baseline items-center justify-center md:justify-start group"
+                            >
 
                                  <img
                                 src={log}
@@ -73,7 +77,7 @@ function Footer() {
                                 ">
                                     Tech.
                                 </span>
-                            </div>
+                            </Link>
 
                         <p className="
                             text-gray-400

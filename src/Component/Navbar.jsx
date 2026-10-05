@@ -55,6 +55,7 @@ function Navbar() {
     to="/"
     onClick={() => setMenuOpen(false)}
     className="flex items-center gap-2.5 px-2 py-1 rounded-lg group"
+    
 >
     {/* Logo */}
     <img
@@ -81,6 +82,7 @@ function Navbar() {
             text-[15px]
             md:text-[16px]
             tracking-tight
+            mt-3
         ">
             VickieTrust
         </span>
@@ -89,8 +91,8 @@ function Navbar() {
             text-[#0770FA]
             font-semibold
             text-[13px]
-            md:text-[14px]
-            mt-1
+            md:text-[16px]
+            -mt-0.5
         ">
             Tech.
         </span>
@@ -250,7 +252,7 @@ function Navbar() {
                             right-0
                             h-screen
                             w-[400px]
-                            max-w-[90%]
+                            max-w-[95%]
                             bg-[#020817]
                             z-[100]
                             shadow-2xl
@@ -267,7 +269,7 @@ function Navbar() {
                                 px-6
                                 py-5
                                 border-b
-                                border-gray-800
+                                border-red-800
                                 h-[80px]
                             "
                         >
@@ -276,7 +278,7 @@ function Navbar() {
                             <Link
                                 to="/"
                                 onClick={() => setMenuOpen(false)}
-                                className="flex items-center gap-3"
+                                className="flex items-center gap-3 "
                             >
                                 <img
                                     src={log}

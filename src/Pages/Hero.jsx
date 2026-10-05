@@ -116,7 +116,7 @@ useEffect(() => {
               flex w-fit
               items-center justify-center gap-2
               rounded-full
-              border border-[#0770FA]
+              
               bg-[#0770FA]/5
               px-4 py-2
               text-xs font-semibold
@@ -126,8 +126,8 @@ useEffect(() => {
               md:text-sm
             "
           >
-            <SiHtmx className="text-sm md:text-base" />
-            Software Engineer
+            
+            {/* Software Engineer */}
           </div>
 
           {/* Heading */}

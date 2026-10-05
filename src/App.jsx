@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Navbar from "./Component/Navbar";
 import HomeCard from "./HomeCard";
 import Footer from "./Component/Footer";
@@ -7,12 +8,26 @@ import ScrollToTop from "./Component/Scrollup";
 import FeaturedProjects from "./Component/Featuredproject";
 // import About from "./Pages/About";
 import Details from "./Pages/Details";
+import Skeleton from "./Component/Skeleton";
+
 
 
 function App() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+    const timer = setTimeout(() => {
+    setLoading(false);
+  }, 2000);
+
+   return () => clearTimeout(timer);
+  }, []);
   return (
     
     <>
+       {loading ? (
+      <Skeleton />
+    ) : (
     <BrowserRouter>
       <ScrollToTop/>
       <Navbar/>
@@ -27,7 +42,7 @@ function App() {
         
       <Footer/>
     </BrowserRouter>
-
+    )}
     </>
   );
 }

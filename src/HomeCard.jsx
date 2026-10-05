@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 import Hero from "./Pages/Hero";
@@ -8,8 +8,12 @@ import Services from "./Pages/Services";
 import Contact from "./Pages/Contact";
 import FeaturedProjects from "./Component/Featuredproject";
 
+
 function HomeCard() {
     const location = useLocation();
+    // const [loading, setLoading] = useState(true);
+
+   
 
     useEffect(() => {
         if (location.hash) {
@@ -27,6 +31,8 @@ function HomeCard() {
             }, 300);
         }
     }, [location]);
+
+   
 
     return (
         <>
