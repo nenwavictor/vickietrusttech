@@ -137,8 +137,8 @@ function Details() {
           
           className="mb-10 inline-flex items-center gap-2 text-gray-400 transition hover:text-[#0770FA]"
         >
-          <FaArrowLeft />
-          Back Home
+          {/* <FaArrowLeft /> */}
+          {/* Back Home */}
         </Link>
 
         {/* Heading */}
