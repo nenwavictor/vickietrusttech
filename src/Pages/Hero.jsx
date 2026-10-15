@@ -6,7 +6,7 @@ import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs, FaHtml5 } from "react-icons/fa";
 
-import profile from "../assets/VICK.png";
+import profile from "../assets/victorabout.png";
 import lapto from "../assets/lapto.png";
 
 import { useEffect, useState } from "react";
@@ -39,12 +39,15 @@ useEffect(() => {
     <section
       className="
         relative overflow-hidden
+        
         min-h-screen
+        
         bg-[#020817]
         px-5 py-16
         sm:px-8
         md:px-10 md:py-20
         lg:px-16 lg:py-24
+        
       "
     >
       {/* Background glow */}
@@ -115,18 +118,17 @@ useEffect(() => {
               mx-auto mb-6
               flex w-fit
               items-center justify-center gap-2
-              rounded-full
-              
+            
               bg-[#0770FA]/5
               px-4 py-2
               text-xs font-semibold
               tracking-wide
-              text-[#0770FA]
+              
               md:mx-0
               md:text-sm
             "
           >
-            
+            {/* <SiHtmx className="text-sm md:text-base" /> */}
             {/* Software Engineer */}
           </div>
 
@@ -381,65 +383,22 @@ useEffect(() => {
   className="
     relative
     flex
-    h-[480px]
+    h-[380px]
     w-full
+    sm:w-200
     items-end
     justify-center
     overflow-hidden
     md:h-[560px]
     md:w-1/2
     lg:h-[620px]
+
   "
 >
-  {/* Main blue glow */}
-  <div
-    className="
-      absolute
-      left-1/2
-      top-1/2
-      h-[320px]
-      w-[320px]
-      -translate-x-1/2
-      -translate-y-1/2
-      rounded-full
-      bg-blue-600/20
-      blur-[120px]
-      md:h-[430px]
-      md:w-[430px]
-    "
-  />
 
-  {/* Secondary glow */}
-  <div
-    className="
-      absolute
-      bottom-0
-      left-1/2
-      h-[250px]
-      w-[250px]
-      -translate-x-1/2
-      rounded-full
-      bg-cyan-500/10
-      blur-[100px]
-    "
-  />
-
-  {/* Purple glow */}
-  <div
-    className="
-      absolute
-      bottom-[-80px]
-      left-[-50px]
-      h-[250px]
-      w-[250px]
-      rounded-full
-      bg-purple-600/15
-      blur-[100px]
-    "
-  />
-
+ 
   {/* Laptop */}
-  <img
+  {/* <img
     src={lapto}
     alt="Coding laptop"
     className="
@@ -458,130 +417,43 @@ useEffect(() => {
       lg:right-[2%]
       lg:w-[350px]
     "
-  />
+  /> */}
 
   {/* React */}
-  <div
-    className="
-      absolute
-      left-[4%]
-      top-[18%]
-      z-30
-      flex
-      h-12
-      w-12
-      items-center
-      justify-center
-      rounded-xl
-      border
-      border-cyan-400/20
-      bg-slate-950/80
-      shadow-[0_0_30px_rgba(34,211,238,0.15)]
-      backdrop-blur-md
-      transition
-      duration-300
-      hover:scale-110
-    "
-  >
-    <FaReact className="text-3xl text-cyan-400" />
-  </div>
+  
 
   {/* Tailwind */}
-  <div
-    className="
-      absolute
-      right-[2%]
-      top-[20%]
-      z-30
-      flex
-      h-12
-      w-12
-      items-center
-      justify-center
-      rounded-xl
-      border
-      border-cyan-400/20
-      bg-slate-950/80
-      shadow-[0_0_30px_rgba(34,211,238,0.15)]
-      backdrop-blur-md
-      transition
-      duration-300
-      hover:scale-110
-    "
-  >
-    <RiTailwindCssFill className="text-3xl text-cyan-400" />
-  </div>
+ 
 
   {/* Node */}
-  <div
-    className="
-      absolute
-      left-[3%]
-      top-[52%]
-      z-30
-      flex
-      h-12
-      w-12
-      items-center
-      justify-center
-      rounded-xl
-      border
-      border-green-400/20
-      bg-slate-950/80
-      shadow-[0_0_30px_rgba(34,197,94,0.15)]
-      backdrop-blur-md
-      transition
-      duration-300
-      hover:scale-110
-    "
-  >
-    <FaNodeJs className="text-3xl text-green-400" />
-  </div>
-
+ 
   {/* HTML */}
-  <div
-    className="
-      absolute
-      right-[3%]
-      top-[52%]
-      z-30
-      flex
-      h-12
-      w-12
-      items-center
-      justify-center
-      rounded-xl
-      border
-      border-orange-400/20
-      bg-slate-950/80
-      shadow-[0_0_30px_rgba(249,115,22,0.15)]
-      backdrop-blur-md
-      transition
-      duration-300
-      hover:scale-110
-    "
-  >
-    <FaHtml5 className="text-3xl text-orange-400" />
-  </div>
-
+  
   {/* ================= MAIN PROFILE IMAGE ================= */}
 
   <img
     src={profile}
     alt="Vickietrust Tech"
     className="
-  absolute
-  bottom-0
-  left-1/2
-  z-20
-  h-auto
-  w-[500px]
-  -translate-x-1/2
-  object-contain
-  sm:w-[550px]
-  md:w-[600px]
-  lg:w-[700px]
-  xl:w-[780px]
+    absolute
+    bottom-0
+    left-1/2
+    z-20
+    h-[380px]
+    w-auto
+    rounded-full
+    top-0
+    lg:top-23
+    max-w-none
+    -translate-x-1/2
+    object-contain
+    object-bottom
+    sm:h-auto
+    sm:w-[300px]
+    md:w-[500px]
+    lg:w-[500px]
+    xl:w-[780px]
+
 "
     
   />
