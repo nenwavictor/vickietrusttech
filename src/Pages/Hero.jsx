@@ -397,37 +397,7 @@ useEffect(() => {
 >
 
  
-  {/* Laptop */}
-  {/* <img
-    src={lapto}
-    alt="Coding laptop"
-    className="
-      absolute
-      right-[2%]
-      top-[4%]
-      z-20
-      w-[230px]
-      rotate-[-4deg]
-      opacity-35
-      drop-shadow-[0_0_40px_rgba(37,99,235,0.3)]
-      sm:w-[270px]
-      md:right-[0%]
-      md:top-[5%]
-      md:w-[310px]
-      lg:right-[2%]
-      lg:w-[350px]
-    "
-  /> */}
-
-  {/* React */}
   
-
-  {/* Tailwind */}
- 
-
-  {/* Node */}
- 
-  {/* HTML */}
   
   {/* ================= MAIN PROFILE IMAGE ================= */}
 

@@ -5,6 +5,7 @@ import MyJourney from "./Journey";
 import AboutDetails from "./Aboutdetail";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import cv from "../assets/cv.pdf";
 
 function MoreAbout() {
 
@@ -56,20 +57,20 @@ const scrollToSection = (sectionId) => {
             <section className="relative ml-5 mr-5">
 
                 {/* HOME ICON */}
-                <div className="flex gap-2 items-center mb-4 text-white">
+                {/* <div className="flex gap-2 items-center mb-4 text-white">
                     {/* <IoMdHome /> */}
                     {/* <div>About Me</div> */}
-                </div>
+                
 
 
                 {/* IMAGE */}
-                <div className="mb-5">
+                {/* <div className="mb-5">
                     <img
                         src={Victorab}
                         alt="Vickietrust Tech"
                         className="rounded-2xl w-full"
                     />
-                </div>
+                </div> */}
 
 
                 {/* ABOUT TEXT */}
@@ -108,7 +109,7 @@ const scrollToSection = (sectionId) => {
                     <nav className="flex gap-2 mt-4">
 
                         {/* DOWNLOAD CV */}
-                        <button
+                        <a href="cv" download="cv.pdf"
                             className="
                                 rounded-sm
                                 border
@@ -127,7 +128,7 @@ const scrollToSection = (sectionId) => {
                         >
                             <MdOutlineFileDownload />
                             Download CV
-                        </button>
+                        </a>
 
 
                         {/* CONTACT */}

@@ -312,7 +312,7 @@ function Navbar() {
 
 
                         {/* Sidebar Navigation */}
-                        <nav className="px-6 py-8">
+                        <nav className="px-4 py-8 ">
 
                             <ul className="flex flex-col gap-2">
 
